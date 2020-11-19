@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="get" class="form-inline justify-content-center" id="filterStore">
+  <input placeholder="Buscar..." class="form-control form-control-sm w-25" type="text" value="{{ search }}" name="search">
+
+  <select name="category_id" class="w-25 form-control form-control-sm">
+    <option value="">Sin selección</option>
+    {% for c in categories %}
+    <option {% if category_id == c.id %} selected {% endif %} value="{{ c.id }}">{{ c.title }}</option>
+    {% endfor %}
+  </select>
+
+  <select name="tag_id" class="w-25 form-control form-control-sm">
+    <option value="">Sin selección</option>
+    {% for t in tags %}
+    <option {% if tag_id == t.id %} selected {% endif %} value="{{ t.id }}">{{ t.name }}</option>
+    {% endfor %}
+  </select>
+
+  <button class="btn btn-primary btn-sm" type="submit"><i class="fas fa-search"></i></button>
+</form>
+
+<div class="row">
+  <div class="col-12">
+    <h2 id="title" class="text-center mt-3">Productos de la tienda</h2>
+  </div>
+</div>
+
+<div class="row">
+
+
+  {% for e in elements %}
+  <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+    <div class="single-product">
+      <div class="product-img">
+        <a href="{% url 'store:detail' e.url_clean %}">
+
+          {% if e.elementimages_set.all.count %}
+          <img src="uploads/{{ e.elementimages_set.all.0.base_cover_name }}.custom.jpeg"
+            alt="{{ e.elementimages_set.all.0.title }}" title="{{ e.elementimages_set.all.0.title }}">
+          {% else %}
+          <img src="uploads/images/default.jpeg" alt="Imagen por defecto" title="Imagen por defecto">
+          {% endif %}
+
+
+
+        </a>
+      </div>
+      <div class="product-content">
+        <h3>
+          <a href="{% url 'store:detail' e.url_clean %}">{{ e.title }}</a>
+        </h3>
+        <div class="product-price">
+          ${{ e.price }}
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  {% endfor %}
+</div>
+
+{% include 'partials/pagination.html' with page_obj=elements %}
+
+{% endblock %}
+

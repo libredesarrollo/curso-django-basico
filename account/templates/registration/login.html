@@ -1,0 +1,63 @@
+{% extends "base_user_account.html" %}
+
+{% load bootstrap %}
+
+{% block content %}
+
+
+
+
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+
+    <div class="login-form">
+
+        {% if next %}
+        Si quieres acceder a {{ next }}
+        <h3>¡Autenticate!</h3>
+        {% endif %}
+
+        {% if user.is_authenticated %}
+        {% include "partials/alert.html" with msj="Estas autenticado" %}
+        {% else %}
+        {% include "partials/alert.html" with msj="No estas autenticado" tag="warning" %}
+        {% endif %}
+
+        {% if form.errors %}
+        {% include "partials/alert.html" with msj="Usuario y/o contraseña incorrecta" tag="danger" %}
+        {% endif %}
+
+
+
+        {{ form.username | bootstrap }}
+
+        {{ form.password | bootstrap }}
+
+        <div class="clearfix">
+            <input type="submit" value="login" class="btn btn-success float-right">
+            <input type="hidden" name="next" value="{{ next }}">
+        </div>
+
+</form>
+</div>
+
+
+<div class="row mt-5">
+    <div class="col-md-6 offset-md-3">
+        <a class="btn btn-secondary btn-block btn-google" href="{% url "social:begin" "google-oauth2" %}"> <i class="fab fa-google"></i> Google</a>
+
+        <a class="btn btn-secondary btn-block btn-twitter" href="{% url "social:begin" "twitter" %}"> <i class="fab fa-twitter"></i> Twitter</a>
+
+        <a class="btn btn-secondary btn-block btn-facebook" href="{% url "social:begin" "facebook" %}"><i class="fab fa-facebook"></i> Facebook</a>
+
+    </div>
+</div>
+
+
+<div class="clearfix"></div>
+<br>
+<a href="{% url 'password_reset' %}">Olvidé contraseña</a>
+
+<a class="float-right" href="{% url 'account:register' %}">Registrar</a>
+
+{% endblock %}

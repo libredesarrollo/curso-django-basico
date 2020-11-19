@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<!-- comentario HTML -->
+
+{# comentario #}
+
+    {% for c in comments_page %}
+      <div>
+          {% autoescape off %}
+          {% endautoescape %}
+          {{ c.text|escape }}
+            --
+          {{ c.date_posted|date:"D d M Y" }}
+
+          {% comment 'esto es un comentario' %}
+            <p> Hola mundo </p>
+          {% endcomment  %}
+          
+      </div>
+    {% endfor %}
+
+<table>
+    {% for c in comments_page %}
+        <tr class="{% cycle 'row1' 'row2' 'row3' %}">
+            ...
+        </tr>
+    {% endfor %}
+</table>
+
+{% include 'partials/pagination.html' with page_obj=comments_page %}
+
+{{ 5|add:"3" }}
+
+{{ "ANDRES"|lower }}
+
+{% endblock %}
+
+
+

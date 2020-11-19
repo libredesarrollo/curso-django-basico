@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load bootstrap %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+    <ul>
+        <li><strong>Usuario:</strong> {{ user.username }}</li>
+        <li><strong>Email:</strong> {{ user.email }}</li>
+        <li><strong>Autenticado:</strong> {{ user.is_authenticated }}</li>
+        <li><strong>Anónimo:</strong> {{ user.is_anonymous }}</li>
+    </ul>
+{% else %}
+    <p><a href="{% url 'login' %}">Login</a></p>
+{% endif %}
+
+{% endblock %}

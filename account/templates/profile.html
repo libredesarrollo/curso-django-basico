@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% load bootstrap %}
+{% load static %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<div class="card">
+    <div class="card-header">
+        Perfil
+    </div>
+    <div class="card-body">
+
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+
+                {% if user.userprofile %}
+                    <img id="iavatar" class="img-fluid" src="{{ MEDIA_URL }}{{ user.userprofile.avatar }}">
+                {% else %}
+                    <img id="iavatar" class="img-fluid" src="{% static 'img/logo.png' %}">
+                {% endif %}
+
+                Thumbanail
+                {% load thumbnail %}
+                <img src="{{ user.userprofile.avatar|thumbnail_url:'avatar' }}" alt="" />
+                <br>
+
+                {% thumbnail user.userprofile.avatar 200x200 upscale as thumb %}
+                <img src="{{ thumb.url }}"
+                    width="{{ thumb.width }}"
+                    height="{{ thumb.height }}" />
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form method="post" enctype="multipart/form-data" id="favatar">
+
+                    <div class="custom-file">
+                        {{ form.avatar }}
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+
+                    {% csrf_token %}
+                    {{ form.user }}
+
+                    <!--<input type="submit" value="Enviar" class="btn btn-success">-->
+                </form>
+            </div>
+        </div>
+
+        <table class="table table-borderless">
+
+            <tbody>
+                <tr>
+                    <th>Usuario</th>
+                    <td>{{ user.username }}</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>{{ user.email }}</td>
+                </tr>
+                <tr>
+                    <th>Autenticado</th>
+                    <td>{{ user.is_authenticated }}</td>
+                </tr>
+                <tr>
+                    <th>Anónimo</th>
+                    <td>{{ user.is_anonymous }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% else %}
+<p><a href="{% url 'login' %}">Login</a></p>
+{% endif %}
+
+<script>
+
+    document.getElementById("customFile").addEventListener("change", function () {
+        filename = this.value.split("\\").pop()
+        this.nextElementSibling.textContent = filename
+        document.getElementById("favatar").submit()
+    })
+
+    document.getElementById("iavatar").onclick = function(){
+        document.getElementById("customFile").click()
+    }
+</script>
+
+{% endblock %}

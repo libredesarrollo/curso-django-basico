@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card mt-2">
+  <div class="card-header bg-success"></div>
+  <div class="card-body">
+    <h1>{{ payment.element.title }}</h1>
+
+    <ul>
+      <li>
+        <strong>
+          Precio: 
+        </strong>
+        {{ payment.price }}
+      </li>
+      <li>
+        <strong>
+          Fecha de compra: 
+        </strong>
+        {{ payment.created_at }}
+      </li>
+      <li>
+        <strong>
+          Plataforma: 
+        </strong>
+        PayPal
+      </li>
+    </ul>
+
+
+  </div>
+</div>
+{% endblock %}
+
+
+
+{% include 'partials/pagination.html' with page_obj=elements %}

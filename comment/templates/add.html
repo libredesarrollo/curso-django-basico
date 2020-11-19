@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load i18n %}
+
+    <form action="{% url 'comment:add' %}" method="post">
+
+    {% trans 'Put your favorite email' %}
+
+        {% csrf_token %}
+
+        {{ form.text }}
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <style>
+        .form-input {
+            width:  100%;
+        }
+    </style>
+
+{% endblock %}

@@ -1,0 +1,6 @@
+{% load storetags %}
+
+
+<p class="ml-3">Precio Total <strong>{{ element.price }}</strong>$ <span class="text-success"> con descuento de <strong>{{ element|discount:coupon|floatformat:2 }}$</strong></span> </p>
+
+

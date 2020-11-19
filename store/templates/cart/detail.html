@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% load bootstrap %}
+
+{% block content %}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio por unidad</th>
+            <th>Precio total</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for c in cart %}
+        {% with product=c.element %}
+            <tr>
+                <td>
+                    <a href="{% url 'store:detail' product.url_clean %}" target="_blank">
+
+                        {% if product.elementimages_set.all.count %}
+                        <img style="width: 80px;" src="uploads/{{ product.elementimages_set.all.0.base_cover_name }}.custom.jpeg"
+                          alt="{{ product.elementimages_set.all.0.title }}" title="{{ product.elementimages_set.all.0.title }}">
+                        {% else %}
+                        <img style="width: 80px;"  src="uploads/images/default.jpeg" alt="Imagen por defecto" title="Imagen por defecto">
+                        {% endif %}
+            
+                      </a>
+
+                </td>
+                <td>{{ product.title }}</td>
+                <td>
+                    
+
+                    <div class="input-group">
+
+                        <div class="input-group-prepend">
+                            <button class="input-group-text changeQuantityMinus minus" data-id="{{product.id}}">-</button>
+                        </div>
+
+                        <input id="e_quantity_{{product.id}}" style="width:40px" type="text" class="from-control text-center" value="{{ c.quantity }}" readonly>
+
+                        <div class="input-group-append">
+                            <button class="input-group-text changeQuantityPlus" data-id="{{product.id}}">+</button>
+                        </div>
+
+
+                    </div>
+
+                    
+
+
+                </td>
+                <td>${{ c.price }}</td>
+                <td id="e_price_{{product.id}}">${{ c.total_price }}</td>
+                <td>
+                    <form action="{% url 'store:cart_remove' product.id %}" method="post">
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                        {% csrf_token %}
+                    </form>
+                </td>
+            </tr>
+            {% endwith %}
+        {% endfor %}
+        <tr>
+            <td>Total</td>
+            <td colspan="3"></td>
+            <td>
+                <strong id="price">${{cart.get_total_price}}</strong>
+            </td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+{% endblock %}

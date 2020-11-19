@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form method="get" class="form-inline justify-content-center">
+      <input class="w-50 mr-2" type="text" value="{{ search }}" name="search" class="form-control form-control-sm">
+
+      <select name="category_id" class="w-25 form-control form-control-sm mr-2">
+        <option value="">Sin selección</option>
+        {% for c in categories %}
+          <option 
+          
+          {% if category_id == c.id %} selected {% endif %}
+          
+          
+          value="{{c.id}}">{{c.title}}</option>
+        {% endfor %}
+      </select>
+
+      <button class="btn btn-primary btn-sm" type="submit">Buscar</button>
+    </form>
+
+    {% for e in elements %}
+      <div class="card mt-2">
+          <div class="card-header bg-success"></div>
+          <div class="card-body">
+            <h3>{{ e.title }}</h3>
+            <p>{{ e.description|truncatechars:'150' }}</p>
+
+             <a class="btn btn-success btn-sm float-right" href="{% url 'store:detail' e.id %}">Ver ID</a>
+             <a class="btn btn-success btn-sm float-right" href="{% url 'store:detail' e.url_clean %}">Ver Slug</a>   
+             <a class="btn btn-success btn-sm float-right" href="{% url 'store:detail' e.id e.url_clean %}">Ver ID y Slug</a>   
+
+          </div>
+          
+      </div>
+    {% endfor %}
+
+{% endblock %}
+
+
+
+{% include 'partials/pagination.html' with page_obj=elements %}

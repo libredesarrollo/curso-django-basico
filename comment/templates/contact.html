@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% load bootstrap %}
+
+{% block content %}
+
+<div class="card">
+    <div class="card-header">
+        <h3>Contacto</h3>
+    </div>
+    <div class="card-body">
+        <form action="" method="post" enctype="multipart/form-data">
+
+
+            {% if form.errors %}
+            <br>
+            {% for field in form  %}
+            {% for error in field.errors %}
+            <div class="alert alert-danger">
+                <strong>{{ field.name }}:</strong> {{ error }}
+            </div>
+            {% endfor %}
+            {% endfor %}
+            {% endif %}
+
+            {{ form|bootstrap }}
+            <input type="submit" value="Enviar" class="btn btn-primary">
+        </form>
+    </div>
+</div>
+{% endblock %}
