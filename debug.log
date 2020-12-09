@@ -33804,3 +33804,62 @@ Not Found: /favicon.ico
 "GET /cart_size HTTP/1.1" 200 12
 "GET /cart_size HTTP/1.1" 200 12
 Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\andre\OneDrive\Escritorio\proyectos\django\store\djangovue\djangovue\__init__.py changed, reloading.
+C:\Users\andre\OneDrive\Escritorio\proyectos\django\store\djangovue\djangovue\__init__.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+"GET / HTTP/1.1" 200 5664
+"GET / HTTP/1.1" 200 5664
+"GET /static/css/custom.css HTTP/1.1" 200 3803
+"GET /static/css/custom.css HTTP/1.1" 200 3803
+"GET /static/fontawesome/css/all.min.css HTTP/1.1" 200 58578
+"GET /static/fontawesome/css/all.min.css HTTP/1.1" 200 58578
+"GET /static/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 159515
+"GET /static/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 159515
+"GET /uploads/images/Android_robot.custom.jpeg HTTP/1.1" 200 23781
+"GET /uploads/images/Android_robot.custom.jpeg HTTP/1.1" 200 23781
+"GET /uploads/images/detail-4855777_1280.custom.jpeg HTTP/1.1" 200 95596
+"GET /uploads/images/detail-4855777_1280.custom.jpeg HTTP/1.1" 200 95596
+"GET /uploads/images/title-1587325_1280.custom.jpeg HTTP/1.1" 200 58039
+"GET /uploads/images/title-1587325_1280.custom.jpeg HTTP/1.1" 200 58039
+"GET /static/js/store.js HTTP/1.1" 200 2162
+"GET /static/js/store.js HTTP/1.1" 200 2162
+"GET /static/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 60010
+"GET /static/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 60010
+"GET /static/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+"GET /static/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+"GET /static/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+"GET /static/fonts/Poppins-Regular.ttf HTTP/1.1" 200 144776
+"GET /static/fonts/Poppins-Bold.ttf HTTP/1.1" 200 140724
+"GET /static/fonts/Poppins-Bold.ttf HTTP/1.1" 200 140724
+"GET /static/fonts/Poppins-Regular.ttf HTTP/1.1" 200 144776
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 6498
+"GET /favicon.ico HTTP/1.1" 404 6498
+Using proactor: IocpProactor
