@@ -2,24 +2,35 @@
 
 {% block content %}
 
-<form method="get" class="form-inline justify-content-center" id="filterStore">
-  <input placeholder="Buscar..." class="form-control form-control-sm w-25" type="text" value="{{ search }}" name="search">
+<form method="get" class="form-inline" id="filterStore">
+  <div class="row">
 
-  <select name="category_id" class="w-25 form-control form-control-sm">
-    <option value="">Sin selección</option>
-    {% for c in categories %}
-    <option {% if category_id == c.id %} selected {% endif %} value="{{ c.id }}">{{ c.title }}</option>
-    {% endfor %}
-  </select>
+    <div class="col-md-3 px-0">
+      <input placeholder="Buscar..." class="form-control form-control-sm" type="text" value="{{ search }}" name="search">
+    </div>
 
-  <select name="tag_id" class="w-25 form-control form-control-sm">
-    <option value="">Sin selección</option>
-    {% for t in tags %}
-    <option {% if tag_id == t.id %} selected {% endif %} value="{{ t.id }}">{{ t.name }}</option>
-    {% endfor %}
-  </select>
+    <div class="col-md-3 px-0">
+      <select name="category_id" class=" form-control form-control-sm">
+        <option value="">Sin selección</option>
+        {% for c in categories %}
+        <option {% if category_id == c.id %} selected {% endif %} value="{{ c.id }}">{{ c.title }}</option>
+        {% endfor %}
+      </select>
+    </div>
 
-  <button class="btn btn-primary btn-sm" type="submit"><i class="fas fa-search"></i></button>
+    <div class="col-md-3 px-0">
+      <select name="tag_id" class="form-control form-control-sm">
+        <option value="">Sin selección</option>
+        {% for t in tags %}
+        <option {% if tag_id == t.id %} selected {% endif %} value="{{ t.id }}">{{ t.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="col-md-3 px-0">
+      <button class="btn btn-primary btn-sm" type="submit"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
 </form>
 
 <div class="row">
@@ -66,4 +77,3 @@
 {% include 'partials/pagination.html' with page_obj=elements %}
 
 {% endblock %}
-
