@@ -25,6 +25,8 @@ SECRET_KEY = 'faps7u6r5kku++qtf9mqxa!io=g%w*&v%rm8&h)fdip)7s4z5d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+SITE_ID = 1
+
 ALLOWED_HOSTS = [
     'testdjango.com','localhost','127.0.0.1'
 ]
@@ -127,7 +129,7 @@ DATABASES = {
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'djangovueelement',
+            'NAME': 'cursodjangovue',
             'USER': 'root',
             'PASSWORD': '',
             'HOST': 'localhost',

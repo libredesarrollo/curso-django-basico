@@ -35131,3 +35131,652 @@ Not Found: /accounts/
 "GET /static/bootstrap/dist/js/bootstrap.min.js.map HTTP/1.1" 200 211771
 "GET /static/bootstrap/dist/js/bootstrap.min.js.map HTTP/1.1" 200 211771
 Using proactor: IocpProactor
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3574
+"GET / HTTP/1.1" 200 3574
+"GET /static/css/custom.css HTTP/1.1" 200 3803
+"GET /static/css/custom.css HTTP/1.1" 200 3803
+"GET /static/js/store.js HTTP/1.1" 200 2162
+"GET /static/js/store.js HTTP/1.1" 200 2162
+"GET /static/fontawesome/css/all.min.css HTTP/1.1" 200 58582
+"GET /static/fontawesome/css/all.min.css HTTP/1.1" 200 58582
+"GET /static/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 62417
+"GET /static/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 62417
+"GET /static/js/jquery-3.4.1.min.js HTTP/1.1" 200 88147
+"GET /static/js/jquery-3.4.1.min.js HTTP/1.1" 200 88147
+"GET /static/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 153117
+"GET /static/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 153117
+"GET /static/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+"GET /static/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+"GET /static/fonts/Poppins-Regular.ttf HTTP/1.1" 200 144776
+"GET /static/fonts/Poppins-Regular.ttf HTTP/1.1" 200 144776
+"GET /static/fonts/Poppins-Bold.ttf HTTP/1.1" 200 140724
+"GET /static/fonts/Poppins-Bold.ttf HTTP/1.1" 200 140724
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 6300
+"GET /favicon.ico HTTP/1.1" 404 6300
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /admin HTTP/1.1" 301 0
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 302 0
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\admin\sites.py", line 414, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 97, in get_context_data
+    current_site = get_current_site(self.request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\shortcuts.py", line 13, in get_current_site
+    return Site.objects.get_current(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 60, in get_current
+    return self._get_site_by_request(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\admin\sites.py", line 414, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 97, in get_context_data
+    current_site = get_current_site(self.request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\shortcuts.py", line 13, in get_current_site
+    return Site.objects.get_current(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 60, in get_current
+    return self._get_site_by_request(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+"GET /admin/login/?next=/admin/ HTTP/1.1" 500 166516
+"GET /admin/login/?next=/admin/ HTTP/1.1" 500 166516
+"GET /admin/login HTTP/1.1" 302 0
+"GET /admin/login HTTP/1.1" 302 0
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\admin\sites.py", line 414, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 97, in get_context_data
+    current_site = get_current_site(self.request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\shortcuts.py", line 13, in get_current_site
+    return Site.objects.get_current(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 60, in get_current
+    return self._get_site_by_request(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\admin\sites.py", line 414, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 97, in get_context_data
+    current_site = get_current_site(self.request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\shortcuts.py", line 13, in get_current_site
+    return Site.objects.get_current(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 60, in get_current
+    return self._get_site_by_request(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+"GET /admin/login/?next=/admin/login HTTP/1.1" 500 166646
+"GET /admin/login/?next=/admin/login HTTP/1.1" 500 166646
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 302 0
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\admin\sites.py", line 414, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 97, in get_context_data
+    current_site = get_current_site(self.request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\shortcuts.py", line 13, in get_current_site
+    return Site.objects.get_current(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 60, in get_current
+    return self._get_site_by_request(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\admin\sites.py", line 414, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\debug.py", line 89, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 63, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\views\generic\edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\auth\views.py", line 97, in get_context_data
+    current_site = get_current_site(self.request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\shortcuts.py", line 13, in get_current_site
+    return Site.objects.get_current(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 60, in get_current
+    return self._get_site_by_request(request)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\contrib\sites\models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\acy\Desktop\proyectos\django\curso\vdjango\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+"GET /admin/login/?next=/admin/ HTTP/1.1" 500 166516
+"GET /admin/login/?next=/admin/ HTTP/1.1" 500 166516
+C:\Users\acy\Desktop\proyectos\django\curso\vdjango\curso\djangovue\settings.py changed, reloading.
+C:\Users\acy\Desktop\proyectos\django\curso\vdjango\curso\djangovue\settings.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2211
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2211
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10205
+"GET /admin/ HTTP/1.1" 200 10205
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/sites/site/ HTTP/1.1" 200 11592
+"GET /admin/sites/site/ HTTP/1.1" 200 11592
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/store/coupon/ HTTP/1.1" 200 11893
+"GET /admin/store/coupon/ HTTP/1.1" 200 11893
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/category/ HTTP/1.1" 200 9721
+"GET /admin/listelement/category/ HTTP/1.1" 200 9721
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/category/add/ HTTP/1.1" 200 10901
+"GET /admin/listelement/category/add/ HTTP/1.1" 200 10901
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"POST /admin/listelement/category/add/ HTTP/1.1" 200 11059
+"POST /admin/listelement/category/add/ HTTP/1.1" 200 11059
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/listelement/category/add/ HTTP/1.1" 302 0
+"POST /admin/listelement/category/add/ HTTP/1.1" 302 0
+"GET /admin/listelement/category/ HTTP/1.1" 200 11272
+"GET /admin/listelement/category/ HTTP/1.1" 200 11272
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /admin/listelement/category/add/ HTTP/1.1" 200 10901
+"GET /admin/listelement/category/add/ HTTP/1.1" 200 10901
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/listelement/category/add/ HTTP/1.1" 302 0
+"POST /admin/listelement/category/add/ HTTP/1.1" 302 0
+"GET /admin/listelement/category/ HTTP/1.1" 200 11511
+"GET /admin/listelement/category/ HTTP/1.1" 200 11511
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/element/ HTTP/1.1" 200 9911
+"GET /admin/listelement/element/ HTTP/1.1" 200 9911
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/element/ HTTP/1.1" 200 9911
+"GET /admin/listelement/element/ HTTP/1.1" 200 9911
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/type/ HTTP/1.1" 200 9693
+"GET /admin/listelement/type/ HTTP/1.1" 200 9693
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/type/ HTTP/1.1" 200 9693
+"GET /admin/listelement/type/ HTTP/1.1" 200 9693
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/category/ HTTP/1.1" 200 11304
+"GET /admin/listelement/category/ HTTP/1.1" 200 11304
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/element/ HTTP/1.1" 200 9911
+"GET /admin/listelement/element/ HTTP/1.1" 200 9911
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/element/add/ HTTP/1.1" 200 21526
+"GET /admin/listelement/element/add/ HTTP/1.1" 200 21526
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/js/inlines.js HTTP/1.1" 200 15225
+"GET /static/admin/js/inlines.js HTTP/1.1" 200 15225
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+"GET /admin/listelement/type/ HTTP/1.1" 200 9693
+"GET /admin/listelement/type/ HTTP/1.1" 200 9693
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/type/add/ HTTP/1.1" 200 10869
+"GET /admin/listelement/type/add/ HTTP/1.1" 200 10869
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+Not Found: /accounts
+Not Found: /accounts
+"GET /accounts HTTP/1.1" 404 6291
+"GET /accounts HTTP/1.1" 404 6291
+Not Found: /accounts/
+Not Found: /accounts/
+"GET /accounts/ HTTP/1.1" 404 8179
+"GET /accounts/ HTTP/1.1" 404 8179
+"GET /admin/listelement/type/add/ HTTP/1.1" 200 10869
+"GET /admin/listelement/type/add/ HTTP/1.1" 200 10869
+"GET /admin/listelement/type/ HTTP/1.1" 200 9693
+"GET /admin/listelement/type/ HTTP/1.1" 200 9693
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/type/add/ HTTP/1.1" 200 10869
+"GET /admin/listelement/type/add/ HTTP/1.1" 200 10869
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/listelement/type/add/ HTTP/1.1" 302 0
+"POST /admin/listelement/type/add/ HTTP/1.1" 302 0
+"GET /admin/listelement/type/ HTTP/1.1" 200 11224
+"GET /admin/listelement/type/ HTTP/1.1" 200 11224
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/element/ HTTP/1.1" 200 9911
+"GET /admin/listelement/element/ HTTP/1.1" 200 9911
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/listelement/element/add/ HTTP/1.1" 200 21561
+"GET /admin/listelement/element/add/ HTTP/1.1" 200 21561
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/listelement/element/add/ HTTP/1.1" 302 0
+"POST /admin/listelement/element/add/ HTTP/1.1" 302 0
+"GET /admin/listelement/element/ HTTP/1.1" 200 11468
+"GET /admin/listelement/element/ HTTP/1.1" 200 11468
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET / HTTP/1.1" 200 4312
+"GET / HTTP/1.1" 200 4312
+"GET /uploads/images/default.jpeg HTTP/1.1" 200 47123
+"GET /uploads/images/default.jpeg HTTP/1.1" 200 47123
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /product/camisa-azul HTTP/1.1" 200 5852
+"GET /product/camisa-azul HTTP/1.1" 200 5852
+"GET /static/fontawesome/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 76612
+"GET /static/fontawesome/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 76612
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+...debug
+...info
+...error
+"GET /comment/ HTTP/1.1" 200 2716
+"GET /comment/ HTTP/1.1" 200 2716
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /?search=&category_id=1&tag_id=2 HTTP/1.1" 200 4332
+"GET /?search=&category_id=1&tag_id=2 HTTP/1.1" 200 4332
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+C:\Users\acy\Desktop\proyectos\django\curso\vdjango\curso\djangovue\urls.py changed, reloading.
+C:\Users\acy\Desktop\proyectos\django\curso\vdjango\curso\djangovue\urls.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /?search=&category_id=2&tag_id=2 HTTP/1.1" 200 3798
+"GET /cart_size HTTP/1.1" 200 11
+"GET /cart_size HTTP/1.1" 200 11
+Using proactor: IocpProactor

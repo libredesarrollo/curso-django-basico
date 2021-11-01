@@ -23,7 +23,7 @@ from django.conf.urls.static import static
 from restmanual import views as restmanual
 
 urlpatterns = [
-    path('grappelli/', include('grappelli.urls')), # grappelli URLS
+    #path('grappelli/', include('grappelli.urls')), # grappelli URLS
     path('admin/', admin.site.urls),
     path('api/', include('listelement.urls')),
     path('comment/', include('comment.urls')),
