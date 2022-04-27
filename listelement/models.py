@@ -36,10 +36,10 @@ class Element(models.Model):
     url_clean = models.SlugField(max_length=255,blank=True)
     description = models.TextField()
     price = models.DecimalField(max_digits=10,decimal_places=2, default=6.10) # 12345678.10
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, related_name='category', on_delete=models.CASCADE, blank=True, null=True,)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    type = models.ForeignKey(Type, on_delete=models.CASCADE)
+    type = models.ForeignKey(Type, related_name='type', on_delete=models.CASCADE, blank=True, null=True,)
 
     def save(self, *args, **kwargs):
         self.url_clean = slugify(self.title)

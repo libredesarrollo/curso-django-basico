@@ -15,7 +15,15 @@ from comment.models import Comment
 class ElementViewSet(viewsets.ModelViewSet):
     queryset = Element.objects.all()
     serializer_class = ElementSerializer
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
+
+    def perform_create(self, serializer):
+        cateid = self.request.data.get("category_id")
+        typeid = self.request.data.get("type_id")
+        serializer.save(
+            category=Category.objects.get(pk=cateid),
+            type=Type.objects.get(pk=typeid)
+        )
 
     @action(detail=False, methods=['get'])
     def all(self, request):
@@ -31,7 +39,7 @@ class ElementViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
 
-class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
+class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
@@ -65,7 +73,7 @@ class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
         serializer = CategorySerializer(category)
         return Response(serializer.data)'''
 
-class TypeViewSet(viewsets.ReadOnlyModelViewSet):
+class TypeViewSet(viewsets.ModelViewSet):
     queryset = Type.objects.all()
     serializer_class = TypeSerializer
 

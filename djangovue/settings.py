@@ -82,6 +82,7 @@ MIDDLEWARE = [
 ]
 
 REST_FRAMEWORK = {
+    "DATETIME_FORMAT":"%d/%m/%Y - %I:%M:%S %p",
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 5,
     'DEFAULT_AUTHENTICATION_CLASSES': [
